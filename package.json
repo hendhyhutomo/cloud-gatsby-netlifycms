@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-netlifycms-gc",
+  "name": "gatsby-netlifycms-github",
   "private": true,
-  "description": "Starter for Gatsby with NetlifyCMS hosted in Google Cloud",
+  "description": "Starter for Gatsby with NetlifyCMS repo in Github",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {

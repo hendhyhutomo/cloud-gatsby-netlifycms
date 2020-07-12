@@ -15,6 +15,7 @@
 - Try and Remove Gatsby Cloud [Found Unnecsary with NetlifyCMS]
 - Enabled Editorial Workflow
 - Set git to Github
+- Try Github Large File Storage
 
 ## 2020-07-11
 
