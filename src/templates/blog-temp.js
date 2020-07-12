@@ -24,7 +24,7 @@ export default class BlogTemp extends React.Component {
         {/* GATSBY IMAGE LINE */}
         <Img
           className='image_class'
-          fluid={post.frontmatter.coverimage.childCloudinaryAsset.fluid}
+          fluid={post.frontmatter.coverimage.childrenCloudinaryAsset.fluid}
           backgroundColor='#000'
         />
         {/* <div dangerouslySetInnerHTML={{ __html: post.html }} /> */}
@@ -96,7 +96,7 @@ export const query = graphql`
       frontmatter {
         title
         coverimage {
-          childCloudinaryAsset {
+          childrenCloudinaryAsset {
             fluid {
               ...CloudinaryAssetFluid
             }

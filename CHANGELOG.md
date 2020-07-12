@@ -14,7 +14,8 @@
 ### External Image Upload Testing
 
 - New Init with Gatsby Cloud
-
+- Enabled Editorial Workflow
+- Set git to Github
 
 ## 2020-07-11
 
