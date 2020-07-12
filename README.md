@@ -51,5 +51,5 @@ DEMO LINK [https://gastby-netlifycms-github.netlify.app/]
 
 ---
 
-##### On Github & Netlify
+##### On Github & Netlify [Sync to Gitlab]
 ##### LAST UPDATE 2 July 2020 by Hendhy Hutomo
