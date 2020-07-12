@@ -102,7 +102,7 @@ module.exports = {
         modulePath: `${__dirname}/cms/cms.js`,
         htmlTitle: `${process.env.SITE_TITLE} | Content Manager`,
         htmlFavicon: `${__dirname}/src/images/icon/icon.png`,
-        enableIdentityWidget: false,
+        // enableIdentityWidget: false,
       },
     },
     // TURNED OFF BECAUSE OF CLOUDINARY

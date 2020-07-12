@@ -22,6 +22,7 @@ collections:
     folder: contents/blog
     create: true
     path: '{{title}}/index'
+    preview_path: blog/{{slug}}
     editor:
       preview: false
     fields:
