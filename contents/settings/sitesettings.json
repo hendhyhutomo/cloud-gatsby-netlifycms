@@ -1,0 +1,16 @@
+{
+  "title": "General Setting",
+  "desc": "JSON desc",
+  "web_name": "Gatsby + Netlify CMS",
+  "color": {
+    "r": 168,
+    "g": 61,
+    "b": 61,
+    "a": 1
+  },
+  "deploy_status_password": "password",
+  "testobject": {
+    "name": "testname",
+    "second": "second test"
+  }
+}

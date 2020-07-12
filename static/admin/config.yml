@@ -1,0 +1,172 @@
+backend:
+  name: git-gateway
+  # name: test-repo
+  # repo: hendhyhutomo/gatsbyv2
+
+media_folder: static/assets
+public_folder: assets
+
+# ACCESS CLOUDINARY MEDIA LIBRARY [OVERWRITE ALL IMAGES]
+# media_library:
+#   name: cloudinary
+#   output_filename_only: false
+#   config:
+#     cloud_name: hendhyhutomo
+#     api_key: 452132947199676
+#     path: 'assets'
+#     folder: { path: 'assets' }
+
+collections:
+  - name: blog
+    label: Blog
+    folder: contents/blog
+    create: true
+    path: '{{title}}/index'
+    editor:
+      preview: false
+    fields:
+      - {
+          name: 'issetting',
+          label: 'issetting',
+          widget: 'hidden',
+          default: 'true',
+          required: true,
+        }
+      - {
+          name: 'contenttype',
+          label: 'contenttype',
+          widget: 'hidden',
+          default: 'blog',
+          required: true,
+        }
+      - {
+          name: 'slug',
+          label: 'Slug',
+          widget: 'string',
+          hint: 'Lower Characters (a-z), Numericals (0-9), dash (-), forwardslash (/) and must not start with a /, Minimum 3 Characters, eg: "project-slug"',
+          pattern:
+            ['^([a-z0-9]+(?:(-|/)[a-z0-9]+)*){3,}$', 'Invalid Characters'],
+        }
+      - { name: 'index', label: 'Index', widget: 'number', default: 0 }
+      - { name: 'date', label: 'Date', widget: 'date' }
+      - { name: 'title', label: 'Title' }
+      - name: 'coverimage'
+        label: 'Cover Image'
+        widget: 'image'
+        media_folder: ''
+      - label: 'Object'
+        name: 'object'
+        widget: 'object'
+        collapsed: true
+        fields:
+          - name: 'thumbimage'
+            label: 'Thumb Image'
+            widget: 'image'
+            tagname: 'tag'
+          - { label: 'Title', name: 'title', widget: 'string' }
+      - { name: 'body', label: 'Body', widget: 'markdown' }
+  - label: 'Pages'
+    name: 'page'
+    delete: false
+    files:
+      - label: 'About'
+        name: 'about'
+        file: 'contents/pages/about/about.json'
+        delete: false
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Description', name: 'desc', widget: 'string' }
+          - { label: 'Description2', name: 'desc2', widget: 'string' }
+          - name: 'image'
+            label: 'Image About'
+            widget: 'image'
+          - label: 'Array Content'
+            name: 'array_content'
+            widget: 'list'
+            allow_add: true
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Content', name: 'content', widget: 'string' }
+  - label: 'Settings'
+    name: 'settings'
+    delete: false
+    format: 'json'
+    editor:
+      preview: false
+    files:
+      - file: 'contents/settings/sitesettings.json'
+        label: 'Site Setting'
+        name: 'general'
+        delete: false
+        description: 'General Site Settings'
+        extension: json
+        format: json
+        fields:
+          - {
+              label: 'Title',
+              name: 'title',
+              widget: 'hidden',
+              default: 'General Setting',
+              required: true,
+            }
+          - { label: 'Color Picker', name: 'color', widget: 'color' }
+          - { label: 'Web Name', name: 'web_name', widget: 'string' }
+          - {
+              label: 'Deploy Status Password',
+              name: 'deploy_status_password',
+              widget: 'string',
+              default: 'password',
+              required: true,
+            }
+          - label: Object Test
+            name: testobject
+            widget: object
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Second Field, name: second, widget: string }
+      - file: 'contents/settings/slug.json'
+        label: 'URL Redirect'
+        name: 'slug'
+        delete: false
+        description: 'Creates URL Redirector'
+        fields:
+          - {
+              label: 'Title',
+              name: 'title',
+              widget: 'hidden',
+              default: 'URL Redirect',
+            }
+          - name: 'redirect'
+            label: 'URL LIST'
+            widget: 'list'
+            label_singular: 'Redirect'
+            required: false
+            fields:
+              - {
+                  label: 'From (Internal Slug)',
+                  name: 'from',
+                  widget: 'string',
+                  hint: 'Lower Characters (a-z), Numericals (0-9), dash (-), forwardslash (/) and must not start with a /, Minimum 3 Characters, eg: "redirect-to-google"',
+                  pattern:
+                    [
+                      '^([a-z0-9]+(?:(-|/)[a-z0-9]+)*){3,}$',
+                      'Invalid Characters',
+                    ],
+                }
+              - {
+                  label: 'To',
+                  name: 'to',
+                  widget: 'string',
+                  hint: 'Lower Characters (a-z), Numericals (0-9), dash (-), forwardslash (/) and must not start with a /, Minimum 3 Characters, eg: External URL "https://google.com", Internal: "google"',
+                  pattern:
+                    [
+                      '^([a-z0-9]+(?:(-|/)[a-z0-9]+)*){3,}$',
+                      'Invalid Characters',
+                    ],
+                }
+              - {
+                  label: 'Active',
+                  name: 'status',
+                  widget: 'boolean',
+                  default: false,
+                }

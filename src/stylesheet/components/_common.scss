@@ -1,0 +1,33 @@
+body{
+  position: relative;
+    font-family: 'Courier New', Courier, monospace
+}
+#___gatsby {
+  position: relative;
+  z-index: 1150;
+}
+#MainLayoutWrapper {
+  min-height: 100vh;
+  background: rgba(255,255,255,0.5);
+}
+
+.layoutBackground{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  background: red;
+  width: 100vw;
+  height: 100vh;
+}
+
+#static{
+  position: fixed;
+  background: red;
+  top: 20px;
+  left: 0px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+}

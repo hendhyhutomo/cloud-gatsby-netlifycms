@@ -1,0 +1,19 @@
+{
+  "name": "gastby-transformer-json-withpath",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lodash": "^4.17.19",
+    "path": "^0.12.7"
+  },
+  "dependencies": {
+    "deep-map": "^2.0.0",
+    "slash": "^3.0.0"
+  }
+}
