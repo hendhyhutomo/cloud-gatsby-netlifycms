@@ -218,7 +218,7 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-meta-redirect` // Handle Redirect for Hosting not in Netlify or Amazon S3
+    `gatsby-plugin-meta-redirect`, // Handle Redirect for Hosting not in Netlify or Amazon S3
     {
       resolve: `gatsby-plugin-netlify`,
       options: {

@@ -40,7 +40,9 @@ Integrated cloudinary with the following integration
 
 ##### Current Setup
 
-Git saved in Github, Preview on Gatsby Cloud, Hosted in Netlify
+Git saved in Github,  
+Build Preview on Gatsby Cloud,  
+Hosted in Netlify  
 Remove Netlify Identity Backend to work with Gatsby Cloud
 
 ##### On Github & Gitlab
