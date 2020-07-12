@@ -27,11 +27,13 @@
 Integrated cloudinary with the following integration
 
 1. Gatsby Transformer Cloudinary Plugin [Applied]
+
 - Image is still hosted in local cdn / git, it will be uploaded during build time to cloudinary (removing the need for gatsby-trasnformer-sharp & gastby-plugin-sharp) potentially reducing build time in converting that image
 - Netlify CMS setting should still be set as normal with standard Media Folder location.
 
 2. Netlify CMS with Cloudinary Media Library
-- Change *ALL* image upload to Cloudinary it will be exported back as URL to cloudinary
+
+- Change _ALL_ image upload to Cloudinary it will be exported back as URL to cloudinary
 - Image transformation can be applied through URL setting in Clouinary [https://cloudinary.com/documentation/image_transformations]
 
 #### NetlifyCMS Access [Identity]
@@ -51,5 +53,8 @@ DEMO LINK [https://gastby-netlifycms-github.netlify.app/]
 
 ---
 
+[https://github.com/hendhyhutomo/gatsby-netlifycms/][https://gitlab.com/hendhyhutomo/gatsby-netlifycms]
+
 ##### On Github & Netlify [Sync to Gitlab]
+
 ##### LAST UPDATE 2 July 2020 by Hendhy Hutomo
