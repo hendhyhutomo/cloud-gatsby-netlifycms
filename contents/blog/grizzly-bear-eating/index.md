@@ -4,7 +4,7 @@ contenttype: blog
 slug: grizzly
 index: 3
 date: 2019-01-08T07:12:31.009Z
-title: Grizzly Bear Eating
+title: Grizzly Bear Eating Check Preview
 coverimage: placeimg_640_480_grayscale_arch.jpg
 test_array:
   - thumbimage: ss3.png
