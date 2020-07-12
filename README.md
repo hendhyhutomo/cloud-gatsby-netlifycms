@@ -34,12 +34,12 @@ Integrated cloudinary with the following integration
 - Change *ALL* image upload to Cloudinary it will be exported back as URL to cloudinary
 - Image transformation can be applied through URL setting in Clouinary [https://cloudinary.com/documentation/image_transformations]
 
-### NetlifyCMS Access [Identity]
+#### NetlifyCMS Access [Identity]
 
 > USERNAME: hendhyhutomo@gmail.com
 > PASSWORD: testing123
 
-##### On Github & Gitlab
+#### On Github & Gitlab
 
 Gatsby Cloud Preview Server not Working with Netlify CMS & Identity
 DEMO LINK [https://gastby-netlifycms-github.netlify.app/]
