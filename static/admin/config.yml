@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
-  # name: test-repo
-  # repo: hendhyhutomo/gatsbyv2
+  # name: git-gateway
+  name: github
+  repo: hendhyhutomo/cloud-gatsby-netlifycms
 
 media_folder: static/assets
 public_folder: assets

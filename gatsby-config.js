@@ -102,6 +102,7 @@ module.exports = {
         modulePath: `${__dirname}/cms/cms.js`,
         htmlTitle: `${process.env.SITE_TITLE} | Content Manager`,
         htmlFavicon: `${__dirname}/src/images/icon/icon.png`,
+        enableIdentityWidget: false,
       },
     },
     // TURNED OFF BECAUSE OF CLOUDINARY
@@ -218,11 +219,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-meta-redirect` // Handle Redirect for Hosting not in Netlify or Amazon S3
-    // {
-    //   resolve: `gatsby-plugin-netlify`,
-    //   options: {
-    //     generateMatchPathRewrites: false, // boolean to turn off automatic creation of redirect rules for client only paths
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        generateMatchPathRewrites: false, // boolean to turn off automatic creation of redirect rules for client only paths
+      },
+    },
   ],
 };

@@ -16,7 +16,7 @@
 
 ### Additional Functions
 
-1. URL ROUTER :link:
+1. URL ROUTER :link: [Added Support for non Netlify & S3 Hosting]
 2. Added Netlify CMS Color Widget (Custom)
 3. Added Youtbe Widget on Editor (with Autoplay Toggle)
 4. Relative Transformer for JSON files
@@ -36,11 +36,17 @@ Integrated cloudinary with the following integration
 ### NETLIFY CMS Access
 
 > USERNAME: hendhyhutomo@gmail.com
-> PASSWORD: testing123å
+> PASSWORD: testing123
+
+##### Current Setup
+
+Git saved in Github, Preview on Gatsby Cloud, Hosted in Netlify
+Remove Netlify Identity Backend to work with Gatsby Cloud
 
 ##### On Github & Gitlab
 
 Gatsby Cloud Preview Server not Working with Netlify CMS & Identity
+DEMO LINK [https://gastbycloud-netlifycms.netlify.app/]
 
 #### OTHER NOTES
 

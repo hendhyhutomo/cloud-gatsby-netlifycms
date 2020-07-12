@@ -13,6 +13,13 @@
 
 ### External Image Upload Testing
 
+- New Init with Gatsby Cloud
+
+
+## 2020-07-11
+
+### External Image Upload Testing
+
 - Cloudinary Testing on NetlifyCMS & Gatsby Transformer
 - All Image for Gatsby Image is now passed through cloudinary 
 - Process Image from JSON File
