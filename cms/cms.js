@@ -2,8 +2,8 @@ import CMS from 'netlify-cms-app';
 import ColorControl from './color/Controls';
 import ColorPreview from './color/Preview';
 import Youtube from './editor/Youtube';
-// Cloudinary Media Library
-import cloudinary from 'netlify-cms-media-library-cloudinary';
+// // Cloudinary Media Library
+// import cloudinary from 'netlify-cms-media-library-cloudinary';
 
 CMS.registerWidget('color', ColorControl, ColorPreview);
 
@@ -35,4 +35,4 @@ CMS.registerEditorComponent({
   },
 });
 // REGISTER CLOUDINARY
-CMS.registerMediaLibrary(cloudinary);
+// CMS.registerMediaLibrary(cloudinary);yarn

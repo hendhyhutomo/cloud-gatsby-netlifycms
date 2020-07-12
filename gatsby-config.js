@@ -84,9 +84,9 @@ module.exports = {
       },
     },
     // ADD SERVICE WORKER FOR WEB-APP OFFLINE FUNCTIONALITY
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
     // REMOVE SERVICE WORKER
-    `gatsby-plugin-remove-serviceworker`,
+    // `gatsby-plugin-remove-serviceworker`,
     {
       resolve: 'gatsby-plugin-transition-link',
       // options: {
