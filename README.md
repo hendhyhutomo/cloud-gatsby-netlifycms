@@ -1,4 +1,4 @@
-## 🚀 GATSBY TEMPLATE with NETLIFY CMS
+## 🚀 GATSBY TEMPLATE with NETLIFY CMS [Github]
 
 ### Specification
 
@@ -13,6 +13,7 @@
 - Form Installed (to Formspree & Netlify)
 - MDX Installed
 - Lunr Search Integrated
+- Enabled Editorial Workflow [Works with Netlify Identity]
 
 ### Additional Functions
 
@@ -33,28 +34,22 @@ Integrated cloudinary with the following integration
 - Change *ALL* image upload to Cloudinary it will be exported back as URL to cloudinary
 - Image transformation can be applied through URL setting in Clouinary [https://cloudinary.com/documentation/image_transformations]
 
-### NETLIFY CMS Access
+### NetlifyCMS Access [Identity]
 
 > USERNAME: hendhyhutomo@gmail.com
 > PASSWORD: testing123
 
-##### Current Setup
-
-Git saved in Github,  
-Build Preview on Gatsby Cloud,  
-Hosted in Netlify  
-Remove Netlify Identity Backend to work with Gatsby Cloud
-
 ##### On Github & Gitlab
 
 Gatsby Cloud Preview Server not Working with Netlify CMS & Identity
-DEMO LINK [https://gastbycloud-netlifycms.netlify.app/]
+DEMO LINK [https://gastby-netlifycms-github.netlify.app/]
 
 #### OTHER NOTES
 
 - Netlify Large Media Clashes with Gatsby Build Transformers will only work if using Images as is
+- NetlifyCMS is useless with Gatsby Cloud as it always deploy preview. Pottenntially Gatsby Cloud is good with other CMS like Strapi as it build preview.
 
 ---
 
-##### On Github & Gitlab
+##### On Github & Netlify
 ##### LAST UPDATE 2 July 2020 by Hendhy Hutomo

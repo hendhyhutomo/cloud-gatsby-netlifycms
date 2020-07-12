@@ -6,14 +6,13 @@
 - Update Form with Recaptcha Verification
 - Add Live search with Lunr (https://css-tricks.com/how-to-add-lunr-search-to-your-gatsby-website/)
 - Custom NetlifyCMS Plugin for Image Input
-- Remove Netlify Large Media [Alternatively Reset Netlify and Git]
 - Try Gitlab Large File Storage
 
 ## 2020-07-11
 
 ### External Image Upload Testing
 
-- New Init with Gatsby Cloud
+- Try and Remove Gatsby Cloud [Found Unnecsary with NetlifyCMS]
 - Enabled Editorial Workflow
 - Set git to Github
 
